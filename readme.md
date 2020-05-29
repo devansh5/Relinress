@@ -1,4 +1,4 @@
-#Relax In Distress
+# Relax In Distress
 
 In the wake of pnademic ,we are surrounded by the newgative news and corona cases .So for releasing the stress harmones from our mind ,one of the scientific and proven techniques is to hear the nature's voice.Meditate.
 
