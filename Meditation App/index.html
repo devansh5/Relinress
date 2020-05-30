@@ -3,56 +3,150 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mediatation App</title>
-    <link rel="stylesheet" href="style.css">
+    <title>RelinRess</title>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        a{
+          font-size: 25px;
+        }
+        p{
+            font-size: 20px;
+        }
+        .ml-3{
+            font-size: 30px;
+        }
+    </style>
 </head>
 <body>
-
-    <div class="app">
-        <div class="vid-container">
-            <video loop>
-                <source src="./video/rain.mp4" type="video/mp4" > 
-            </video>
-        </div>
-        <div class="time-select">
-            <button data-time="120">2 Minutes</button>
-            <button data-time="300">5 Minutes</button>
-            <button data-time="600">10 Minutes</button>
-        </div>
-        <div class="player-container">
-            <audio class="song">
-                <source src="./sounds/rain.mp3">
-            </audio>
-            <img src="./svg/play.svg" alt="play" class="play">
-            <svg class="track-outline" width="453" height="453" viewBox="0 0 453 453" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="226.5" cy="226.5" r="216.5" stroke="white" stroke-width="20" />
-            </svg>
-            <svg class="moving-outline" width="453" height="453" viewBox="0 0 453 453" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="226.5" cy="226.5" r="216.5" stroke="#018EBA" stroke-width="20"/>
-            </svg>
-            <h3 class="time-display">0:00</h3>
-                
-                
-                
-        </div>
-        <div class="sound-picker">
-            <button data-sound="./sounds/rain.mp3" data-video="./video/rain.mp4"><img src="./svg/rain.svg" alt="rain" ></button>
-            <button data-sound="./sounds/beach.mp3" data-video="./video/beach.mp4">
-                <img src="./svg/beach.svg" alt="beach">
+    <header class="text-gray-500 bg-gray-900 body-font">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+          <nav class="flex lg:w-2/5 flex-wrap items-center text-base md:ml-auto">
+            <a class="mr-6 hover:text-white">Home</a>
+            <a class="mr-6 hover:text-white">About</a>
+  
+          </nav>
+          <a class="flex order-first lg:order-none lg:w-1/5 title-font font-medium items-center text-white lg:items-center lg:justify-center mb-4 md:mb-0">
+            <img src="https://img.icons8.com/color/48/000000/meditation-guru.png"/>
+            <span class="ml-3 text-xl xl:block lg:hidden">Meditate</span>
+          </a>
+          <div class="lg:w-2/5 inline-flex lg:justify-end ml-5 lg:ml-0">
+            <button class="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0"><a href="meditate.html">Play the Sounds</a>
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+                <path d="M5 12h14M12 5l7 7-7 7"></path>
+              </svg>
             </button>
+          </div>
         </div>
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-    <script src="app.js"></script>
+      </header>
+      <section class="text-gray-500 bg-gray-900 body-font">
+        <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+          <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+            <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">Play It
+              <br class="hidden lg:inline-block">Relax and Meditate
+            </h1>
+            <p class="mb-8 leading-relaxed">Play the Sound set the timer  Meditate and Relax Best way to release the Adrenaline, Cortisol, Norepinephrine(Stress Harmone)</p>
+            <div class="flex justify-center">
+              <button class="inline-flex text-white bg-orange-500 border-0 py-2 px-6 focus:outline-none hover:bg-orange-600 rounded text-lg"><a href="https://www.medicalnewstoday.com/articles/145855">More About Stress</a></button>
+              <button class="ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg">Play the Sound</button>
+            </div>
+          </div>
+          
+            <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+                <img class="object-cover object-center rounded" alt="hero" src="https://images.unsplash.com/photo-1512438248247-f0f2a5a8b7f0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
+              </div>
+         
+          
+        </div>
+      </section>
+      <section class="text-gray-500 bg-gray-900 body-font">
+        <div class="container px-5 py-24 mx-auto flex flex-wrap">
+          <div class="flex w-full mb-20 flex-wrap">
+            <h1 class="sm:text-3xl text-2xl font-medium title-font text-white lg:w-1/3 lg:mb-0 mb-4">Play the Nature's Sound</h1>
+            <div data-aos="zoom-in">
+            <p class="lg:pl-6 lg:w-2/3 mx-auto leading-relaxed text-base">Those who contemplate the beauty of the earth find reserves of strength that will endure as long as life lasts.Human beings are part of nature. Nature is not dependent on human beings to exist. 
+                Human beings, on the other hand, are totally dependent on nature to exist.</p>
+            </div>
+          </div>
+          <div class="flex flex-wrap md:-m-2 -m-1">
+            <div class="flex flex-wrap w-1/2">
+                <div class="md:p-2 p-1 w-1/2">
+                    <div data-aos="fade-right">
+                        <img alt="gallery" class="w-full object-cover h-full object-center block" src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
+                    </div>    
+                </div>
+              <div class="md:p-2 p-1 w-1/2">
+                <img alt="gallery" class="w-full object-cover h-full object-center block" src="https://images.unsplash.com/photo-1499810631641-541e76d678a2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
+              </div>
+              <div class="md:p-2 p-1 w-full">
+                <div data-aos="fade-up"
+                data-aos-anchor-placement="top-bottom">
+                <img alt="gallery" class="w-full h-full object-cover object-center block" src="https://images.unsplash.com/photo-1491172700640-4f1a131a3670?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
+                </div>
+            </div>
+            </div>
+            <div class="flex flex-wrap w-1/2">
+                    <div class="md:p-2 p-1 w-full">
+                        <div data-aos="fade-left">
+                            <img alt="gallery" class="w-full h-full object-cover object-center block" src="https://images.unsplash.com/reserve/YEc7WB6ASDydBTw6GDlF_antalya-beach-lulu.jpg?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
+                        </div>
+                    </div>
+              
+                
+                    <div class="md:p-2 p-1 w-1/2">
+                    
+                            <img alt="gallery" class="w-full object-cover h-full object-center block" src="https://images.unsplash.com/photo-1508672019048-805c876b67e2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
+                        
+                    </div>
+              <div class="md:p-2 p-1 w-1/2">
+                <div data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000">
+                <img alt="gallery" class="w-full object-cover h-full object-center block" src="https://images.unsplash.com/photo-1502230831726-fe5549140034?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
+            </div>  
+            </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section class="text-gray-500 bg-gray-900 body-font">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="flex items-center lg:w-3/5 mx-auto border-b pb-10 mb-10 border-gray-800 sm:flex-row flex-col">
+            <div class="sm:w-32 sm:h-32 h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded-full text-orange-400 bg-gray-800 flex-shrink-0">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="sm:w-16 sm:h-16 w-10 h-10" viewBox="0 0 24 24">
+                <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+              </svg>
+            </div>
+            <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
+              <h2 class="text-white text-lg title-font font-medium mb-2">Ocean Sound</h2>
+              <p class="leading-relaxed text-base">Being near to or hearing the ocean is recognised as bringing a sense of calm and perspective and a new project aims to give people access to this benefit wherever they are</p>
+              
+               
+              
+            </div>
+          </div>
+          <div class="flex items-center lg:w-3/5 mx-auto border-b pb-10 mb-10 border-gray-800 sm:flex-row flex-col">
+            <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
+              <h2 class="text-white text-lg title-font font-medium mb-2">Stress</h2>
+              <p class="leading-relaxed text-base">Stress is a feeling of emotional or physical tension. It can come from any event or thought that makes you feel frustrated, angry, or nervous. Stress is your body's reaction to a challenge or demand. In short bursts, stress can be positive, such as when it helps you avoid danger or meet a deadline.</p>
+              
+            </div>
+            <div class="sm:w-32 order-first sm:order-none sm:h-32 h-20 w-20 sm:ml-10 inline-flex items-center justify-center rounded-full text-orange-400 bg-gray-800 flex-shrink-0">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="sm:w-16 sm:h-16 w-10 h-10" viewBox="0 0 24 24">
+                <circle cx="6" cy="6" r="3"></circle>
+                <circle cx="6" cy="18" r="3"></circle>
+                <path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"></path>
+              </svg>
+            </div>
+          </div>
+          
+          <button class="flex mx-auto mt-20 text-white bg-orange-500 border-0 py-2 px-8 focus:outline-none hover:bg-orange-600 rounded text-lg"><a href="meditate.html">Go to page</a></button>
+        </div>
+      </section>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+           AOS.init();
+      </script>
 </body>
 </html>

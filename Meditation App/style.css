@@ -3,6 +3,16 @@
   padding: 0;
   box-sizing: border-box;
 }
+h1{
+  text-align: center;
+  color: white;
+  margin-top: 5px;
+
+}
+h1 span{
+  color: rgb(213, 75, 57);
+  font-size: 60px;
+}
 .app{
   height: 100vh;
   display: flex;
